@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>aula-08</title>
+</head>
+<body>
+    <h1>estrututa de condição</h1>
+</body>
+<script>
+
+    let n = parseInt(prompt('jogador 1 escolha um numero: '));
+    let n1 = parseInt(prompt('jogador 2 escolha um numero: '));
+    if (n == n1){
+        alert('vocês empataram');
+    }
+
+    let numeroSort = parseInt(Math.random() * 2); 
+
+    if (numeroSort === 0) {
+        if (n < n1) {
+            alert('parabén jodardo numero 1 vc ganhou');
+        }else {
+            alert('parabens numero 2 voce=ê é o capeão');
+        }
+    }
+</script>
+</html>
