@@ -8,21 +8,34 @@
     <h1>estrututa de condição</h1>
 </body>
 <script>
-
+//pedir para os jogadores 1 e 2 escolher um numero
     let n = parseInt(prompt('jogador 1 escolha um numero: '));
     let n1 = parseInt(prompt('jogador 2 escolha um numero: '));
+//condição para saber se os numeros são iguai.
     if (n == n1){
         alert('vocês empataram');
     }
-
+// função que sorteia um numero
     let numeroSort = parseInt(Math.random() * 2); 
 
+//condição que diz que se o numero escolhido foi 0 entao ganha quem escolheu o numero menor
     if (numeroSort === 0) {
         if (n < n1) {
             alert('parabén jodardo numero 1 vc ganhou');
         }else {
-            alert('parabens numero 2 voce=ê é o capeão');
+            alert('parabens numero 2 voceê é o capeão');
+        }
+//condição que diz se o mumero escolido foi 02 então o que escolheu o maior numero venceu
+    } else {
+        if (n1 > n) { 
+            alert('parabens numero 2 voceê é o capeão');
+
+        }else {
+            alert('parabén jodardo numero 1 vc ganhou');
         }
     }
+
+
+
 </script>
 </html>
