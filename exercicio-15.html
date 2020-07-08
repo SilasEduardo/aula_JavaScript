@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula-15</title>
+</head>
+</body>
+    <h1>aulas de logica laço de repetição</h1>
+
+    <script>
+        let n = parseInt(prompt('digite um numero: '));
+
+        let ind = 0;
+
+        while(ind <= 1000) {
+            document.write((n + ' x ' + ind + ' = ' + n * ind) +'<br>');
+
+            if(ind % 10 === 0 && ind != 0){
+                document.write('<hr>');
+            }
+
+            ind ++;
+
+
+            
+        }
+        document.write('saiu do loop')
+    </script>
+
+
+</body>
+</html>
