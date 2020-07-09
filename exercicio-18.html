@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula-18</title>
+</head>
+<body>
+   <h1>aula de logica de programação</h1>
+   <div id="output">hgh</div>
+   <button onclick="mostraTabuada()">Criar tabuda</button>
+   <button onclick="limparTabuada()">limpatar tabuda</button>
+<script>
+    function mostraTabuada(){
+        document.write('mostra tabuada')
+    }
+    var output = document.querySelector('#output');
+    var menssagem = '';
+    for(i = 0; i <= 100; i++){
+        menssagem += 'silas é bom de logica: ' + i + '<br>';
+    } 
+
+    output.innerHTML = menssagem;
+</script>
+    
+    
+</body>
+</html>

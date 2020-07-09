@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula-19</title>
+</head>
+<body>
+
+    <h1>aula de função</h1>
+
+    <button onclick="criarTabuada()">crie uma tabuada</button>
+    <button onclick="apagartabuada()">a pague as tabuadas</button>
+
+    <div id="output"></div>
+
+    <script>
+        let output = document.querySelector('#output');
+        let messagem = '';
+        function criarTabuada(){
+         let n = parseInt(prompt('Digite o numero que você deseja da Tabuada: '));
+            let n2 = parseInt(prompt('digite o numero limite da Tabuada: '));
+            apagartabuada();
+
+            for(i = 0; i <= n2; i++){
+                messagem += i + ' x ' + n + ' = ' + (i * n) + '<br>';
+            }
+
+            output.innerHTML = messagem;
+        }
+
+        function apagartabuada(){
+            messagem = '';
+
+            output.innerHTML = messagem;
+        }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio-20</title>
+</head>
+<body>
+    <h1>Lógica de Programação com javascript</h1>
+    <button onclick="soma()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="divisao">/</button>
+
+    <div id="output"></div>
+
+    <script>
+        let output = document.querySelector('#output');
+        let messagem = 0;
+        let n = parseInt(prompt('digite um numero: '));
+        output.innerHTML = n
+
+        function soma(){
+            let n1 = parseInt(prompt('digite outro nomero: '));
+            n += n1;
+
+            output.innerHTML = n;
+
+        }
+        function subtrair(){
+            let n1 = parseInt(prompt('digite outro nomero: '));
+            n -= n1;
+
+            output.innerHTML = n;
+
+        }
+
+        function multiplicacao(){
+            let n1 = parseInt(prompt('digite outro nomero: '));
+            n *= n1;
+
+            output.innerHTML = n;
+
+        }
+        function divisao(){
+            let n1 = parseInt(prompt('digite outro nomero: '));
+            n /= n1;
+
+            output.innerHTML = n;
+
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

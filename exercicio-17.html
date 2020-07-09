@@ -11,15 +11,19 @@
         (fonte:http://www.ponteiro.com.br/bisse.php)
     </p>
     <script>
-        let nAno = parseInt(prompt('digite o ano: '));
-        if(nAno === 2000){
-            alert('ano bissexto!!!');
+    let ano = parseInt(prompt('digite um numero: '));
+    let limite = parseInt(prompt('digite o numero limite: '));
+
+   
+    while(ano <=limite){
+        if(!(ano % 100 === 0) || (ano % 400 === 0)){
+            document.write(ano + '<br>');
+        }else{
+            document.write(ano + ' não é bissexto');
         }
-        else if(nAno % 4 === 0 || !(nAno % 100 === 0)|| nAno % 400 === 0) {
-            alert('esse ano é bissexto');
-        }else {
-            alert('esse ano não é bissexto');
-        }
+
+        ano += 4;
+    }
     </script>
     
 </body>
