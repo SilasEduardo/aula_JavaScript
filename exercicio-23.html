@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula-23</title>
+</head>
+<body>
+    <button onclick="mostrarOutput()">mostrar output</button>
+    <button onclick="mostrarAlert()"> mostrar alert</button>
+<div id="output"></div>
+    
+<script>
+    function mostrarAlert(){
+        var altura = parseInt(prompt('digite a altura: '));
+        var largura = parseInt(prompt('digite a largura: '));
+
+        var area = calcular(altura, largura);
+
+        alert('a área é: ' + area);
+    }
+    function mostrarOutput(){
+        var altura = parseInt(prompt('digite a altura: '));
+        var largura = parseInt(prompt('digite a largura: '));
+
+        var area = calcular(altura, largura);
+
+       document.querySelector('#output').innerHTML = 'a área é: '+ area;
+    }
+
+    
+    function calcular(a, l){
+        return a * l;
+    }
+
+
+</script>
+</body>
+</html>
