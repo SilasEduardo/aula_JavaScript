@@ -8,13 +8,18 @@
     <h1>aulas de logica laço de repetição</h1>
 
     <script>
+        // pedindo um numero
         let n = parseInt(prompt('digite um numero: '));
 
+         //atribuindo u numero a uma variavel
         let ind = 0;
 
+        //condições de que avi rodar mil vez o programa
         while(ind <= 1000) {
+            //exibir a meesagem 
             document.write((n + ' x ' + ind + ' = ' + n * ind) +'<br>');
-
+            
+            //condições que valida para ineserir um linha de 10 em 10 menso no 0
             if(ind % 10 === 0 && ind != 0){
                 document.write('<hr>');
             }

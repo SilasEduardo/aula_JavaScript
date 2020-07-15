@@ -5,29 +5,41 @@
     <title>aula-23</title>
 </head>
 <body>
+    <!-- criando dois botões -->
     <button onclick="mostrarOutput()">mostrar output</button>
     <button onclick="mostrarAlert()"> mostrar alert</button>
+
+    <!-- div para colocar conteudo -->
 <div id="output"></div>
     
 <script>
+    //fução mostra
     function mostrarAlert(){
+        //pedir 2 numeros
         var altura = parseInt(prompt('digite a altura: '));
         var largura = parseInt(prompt('digite a largura: '));
 
+        // area recebe fumção que calcula
         var area = calcular(altura, largura);
-
+        //mostar area
         alert('a área é: ' + area);
     }
+    // função que vai mostra 
     function mostrarOutput(){
+
+        //pedir dois numeros
         var altura = parseInt(prompt('digite a altura: '));
         var largura = parseInt(prompt('digite a largura: '));
 
+        // chando função calcula
         var area = calcular(altura, largura);
 
+
+        // selecionado e ja inserindo no html
        document.querySelector('#output').innerHTML = 'a área é: '+ area;
     }
 
-    
+    //função que calcula dois numeros
     function calcular(a, l){
         return a * l;
     }

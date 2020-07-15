@@ -10,17 +10,26 @@
         //pediar notas dos alunos
  let alunoNumero1 = parseInt(prompt('digite a nota do aluno: '));
  let alunoNumero2 = parseInt(prompt('digite a nota do aluno: '));
+
+
  //ferificar se as notas são maiores que 0
 
  if (alunoNumero1 === 0 || alunoNumero2 === 0) {
      alert('aluno reprovado');
+
+     //tirar a media das notas
  }else{
 
     let media = (alunoNumero1 + alunoNumero2)/2;
-
+    //ferificar se aluno tirou nota maior que 5
     if (media >= 5) {
+        //mesagem se tirou acima de 5
         alert('parabens aluno aprovado!!!');
+        
+        //messagem se tirou menos que 5
+    }else{
         alert('aluno reprovado');
+
  }
  }
 

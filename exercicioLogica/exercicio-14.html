@@ -8,16 +8,22 @@
     <h1>aulas de logica laço de repetição</h1>
 
     <script>
+
+        //pedindo um numero
        let n = parseInt(prompt('insira um numero: '))
 
+        // defindo quantas vez vai passar no loop
        for(i = 1; i <= 100; i++){
 
+            //cada vez que passar vai execultar o codigo de baixo
            document.write(n + ' x ' + i + ' = ' +(n * i) + '<br>');
            document.write('<br>');
+           //cada 10 numero inserir uma linha
            if(i % 10 === 0){
                document.write('<hr>');
            }
        }
+       // fim do programa
        document.write('saiu do loop');
     </script>
 

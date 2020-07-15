@@ -11,10 +11,11 @@
         (fonte:http://www.ponteiro.com.br/bisse.php)
     </p>
     <script>
+    //pedindo 2 números
     let ano = parseInt(prompt('digite um numero: '));
     let limite = parseInt(prompt('digite o numero limite: '));
 
-   
+   //condiçõe para que o ano seja bissexto
     while(ano <=limite){
         if(!(ano % 100 === 0) || (ano % 400 === 0)){
             document.write(ano + '<br>');

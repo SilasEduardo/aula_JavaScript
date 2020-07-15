@@ -5,35 +5,51 @@
     <title>exercicio-22</title>
 </head>
 <body>
+<!-- criando quatro botão -->
 <button onclick="cacula('+')">+</button>
 <button onclick="cacula('-')">-</button>
 <button onclick="cacula('*')">*</button>
 <button onclick="cacula('/')">/</button>
 
+<!-- dive para inserir conteudo -->
 <div id="output"></div>
 
 <script>
+    //seklesionando conteudo
     let output = document.querySelector('#output')
+
+    //pedindo numero e cinvertendo
     let n = parseFloat(prompt('digite um numero: '));
 
+    //função mostra
     function mostra(){
         output.innerHTML = n
     }
+
     mostra();
 
-    function cacula(simbulo){
-        let n1 = parseFloat(prompt('digite um numero: '));
 
+    // função calcula
+    function cacula(simbulo){
+
+        //pedindo um numero
+        let n1 = parseFloat(prompt('digite um numero: '));
+        //switch recepe a valriave simbulo
         switch(simbulo){
+            // se esolher + ele soma 
             case '+':
                 n += n1;
+            
                 break;
+            //se escolher - ele subtrai
             case '-':
                 n -= n1;
                 break;
+            // se escolher x ele multiplica
             case '*':
                 n *= n1;
                 break;
+            // se escolher / ele divide
             case '/':
                 n /= n1;
                 break;

@@ -6,19 +6,30 @@
 </head>
 <body>
     <h1>Lógica de Programação com javascript</h1>
+    <!-- cria um botão para cada operação matematica -->
     <button onclick="soma()">+</button>
     <button onclick="subtrair()">-</button>
     <button onclick="multiplicacao()">*</button>
     <button onclick="divisao">/</button>
 
+    <!-- compo do HTML -->
     <div id="output"></div>
 
     <script>
+
+        //selecionar html
         let output = document.querySelector('#output');
+
+        //messagem = 0
         let messagem = 0;
+
+        //pedindo um numero ao usuario
         let n = parseInt(prompt('digite um numero: '));
+
+        //colocando numero no html
         output.innerHTML = n
 
+        //função que faz soma
         function soma(){
             let n1 = parseInt(prompt('digite outro nomero: '));
             n += n1;
@@ -26,6 +37,8 @@
             output.innerHTML = n;
 
         }
+
+        //função subtração
         function subtrair(){
             let n1 = parseInt(prompt('digite outro nomero: '));
             n -= n1;
@@ -34,6 +47,7 @@
 
         }
 
+        //função multiplicação
         function multiplicacao(){
             let n1 = parseInt(prompt('digite outro nomero: '));
             n *= n1;
@@ -41,6 +55,7 @@
             output.innerHTML = n;
 
         }
+        //funç~]ao divisão
         function divisao(){
             let n1 = parseInt(prompt('digite outro nomero: '));
             n /= n1;

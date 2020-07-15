@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <title>aula-19</title>
 </head>
+
+
+
 <body>
 
     <h1>aula de função</h1>
-
+    <!--dois botões que recebem a função criar e apagar tabuada-->
     <button onclick="criarTabuada()">crie uma tabuada</button>
     <button onclick="apagartabuada()">a pague as tabuadas</button>
 
+    <!-- div onde iara aparecer a messagem -->
     <div id="output"></div>
 
-    <script>
+<script>
+        //selecionando documento html
         let output = document.querySelector('#output');
+
+        //criando messagem vasia 
         let messagem = '';
+
+        //função criar tabuada tabuada
+
         function criarTabuada(){
+            //pedindo 2 numeros 
          let n = parseInt(prompt('Digite o numero que você deseja da Tabuada: '));
             let n2 = parseInt(prompt('digite o numero limite da Tabuada: '));
+
+
+            //chamando a função apagar tabuada
             apagartabuada();
 
+
+            //de finindo limite e número da tabuada
             for(i = 0; i <= n2; i++){
                 messagem += i + ' x ' + n + ' = ' + (i * n) + '<br>';
-            }
+            
+                
+                //colocando messagem no html
 
             output.innerHTML = messagem;
+            }
         }
 
+        //função apagar tabuada
         function apagartabuada(){
+            //atribuidon messagem a uma string vazia
             messagem = '';
 
+
+            //colocando messagem vazia no html 
             output.innerHTML = messagem;
         }
-    </script>
+</script>
     
     
 </body>
