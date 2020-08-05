@@ -1,0 +1,58 @@
+body {
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight:bold;
+}
+.dados-pessoais {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.lista {
+   margin-left: 30px; 
+   list-style-type: disc;
+}
+
+table, tr, td, th {
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    left:1em;
+}
+
+img {
+    border-radius: 100%;
+    padding: 1em;
+}
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left:1em;
+}
+.muda1{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ul {
+    padding: 1em;
+}
+
+.b{
+    padding: 0.3em;
+}
+    
+
+.emphasis {
+    font-weight: bold;
+    color: darkgreen ;
+
+}
