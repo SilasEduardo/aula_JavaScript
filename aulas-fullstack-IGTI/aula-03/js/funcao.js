@@ -1,32 +1,26 @@
-/*function sum(a, b){
+//função que soma dois números
+function sum(a, b){
     return a + b;
+    
 }
 
-console.log(sum(2, 4));
+console.log(sum(2, 6));
 
-
-function compareNumber(a, b) {
-    return a > b ? 1 : a < b ? -1 : 0;
+//função que compara 2 número se a > b retorna 1 se for menor -1 se for igual 0;
+function compara(a, b){
+    var maior = a > b ? 1: a < b ? -1 : 0;
+    return maior
 }
+console.log(compara(6, 6));
 
+//função que soma varios numeros.
 
-console.log(compareNumber(10, 1));
-
-
-*/
-
-
-
-function somatorio (from, upTo) {
-    var sum = 0;
-
-    for( var i = from; i <= upTo; i++){
-        sum += i
+function somatorio(from, upto){
+    var x = 0
+    for(i = from; i <= upto; i++){
+    x += i;
     }
-
-    return sum;
+    return x;
 }
-
- 30
-
-    console.log(somatorio(1, 10))
+console.log(somatorio(1, 10));
+console.log(somatorio(5, 50));

@@ -86,7 +86,7 @@ for(i = 0; i <= 10; i++){
 */
 
 
-var dias = 4;
+var dias = 5;
 
 
 diaSemana = 
@@ -107,5 +107,5 @@ dias === 1
 
 : 'escolha u numero valido';
 
-console.log(diaSemana)
+console.log(diaSemana);
 
